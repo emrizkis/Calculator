@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Calculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Calculator" parent="Base.Theme.Calculator" />
+    <style name="Theme.Calculator.SplashScreen" parent="Theme.SplashScreen">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Calculator</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Calculator.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Calculator.ResultStyle">
+        <item name="android:layout_row">0</item>
+        <item name="android:layout_rowSpan">2</item>
+        <item name="android:layout_rowWeight">2</item>
+        <item name="android:layout_column">0</item>
+        <item name= "android:layout_columnSpan">4</item>
+        <item name= "android:gravity">bottom|right</item>
+        <item name= "android:textSize">50sp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Theme.Calculator.CellStyle">
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name= "android:gravity">fill</item>
+        <item name= "android:textSize">35sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:onClick">onClick</item>
+
+    </style>
+</resources>
